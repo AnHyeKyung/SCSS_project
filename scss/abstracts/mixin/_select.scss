@@ -1,0 +1,8 @@
+@mixin select($varlable) {
+  @include background(
+    map-get($varlable, ImageName),
+    right map-get($varlable, positionRight) center
+  );
+  padding: 0 map-get($varlable, positionRight) 0 map-get($varlable, paddingLeft);
+  appearance: none;
+}
